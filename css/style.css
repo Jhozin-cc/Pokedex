@@ -1,0 +1,104 @@
+    /* import da fonte utilizada na pokedex */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');   
+    * {
+        margin: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+        font-family: 'Oxanium', cursive;
+    }
+    
+
+    
+    body {
+        text-align: center;
+        background: linear-gradient(to bottom, #6ab7f5, #fff);
+        min-height: 100vh;
+    }
+    
+    main {
+        display: inline-block;
+        margin-top: 2%;
+        padding: 15px;
+        position: relative;
+    }
+    
+    /*edição do tamanho da img pokedex*/
+    .pokedex {
+        width: 100%;
+        max-width: 425px;
+    }
+    /*Definição do tamanho do pokemon e sua posição no site*/
+    .pokemon__image {
+        position: absolute;
+        bottom: 55%;
+        left: 50%;
+        transform: translate(-63%, 20%);
+        height: 18%;
+    }
+    /*Definição do tamanho do pokemon number/name e sua localização */
+    .pokemon__data {
+        position: absolute;
+        font-weight: 600;
+        color: #aaa;
+        top: 54.5%;
+        right: 52%;
+        font-size: clamp(8px, 5vw, 25px);
+    }
+    /*Definição da cor do pokemon name e sua formatação */
+    .pokemon__name {
+        position: absolute;
+        color: #3a444d;
+        text-transform: capitalize;
+    }
+    
+    /*Definição do posicionamento do formulario de pesquisa */
+    .form {
+        position: absolute;
+        width: 65%;
+        top: 65%;
+        left: 13.5%
+    }
+    
+    /*Estilização da barra de pesquisa*/
+    .input__search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 3px 0 #888, -5px 7px 0 #333;
+    }
+
+    /*Definição do posionamento dos botões*/
+    .buttons {
+    position:absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+    }
+
+    /*Estilização dos botões*/
+    .button{
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px,5vm,1rem);
+    font-weight: 600;
+    color: #fff;
+    background-color: #444;
+    box-shadow: -3px 3px 0 #222, -5px 7px 0 #000;
+    }  
+
+    /*alteração na estilização do botão, para efeito após o click*/
+    .button:active{ 
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+    }
